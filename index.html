@@ -15,7 +15,9 @@
       </a>
       <section>
         <img src="img/icon-search.svg" alt="Поиск">
-        <!-- Здесь будет форма поиска -->
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+          <input type="search" placeholder="Поиск:" name="search">
+        </form>
       </section>
 
       <a href="blank.html">
@@ -64,35 +66,35 @@
     <h1>Интернет-магазин Техномарт</h1>
     <section>
       <ul>
-        <li id="icon-1">
+        <li class="icon-1">
           <h3>Материалы</h3>
           <img src="img/icon-1.svg" width="44" height="65" alt="">
           <a href="blank.html">
             На любой вкус
           </a>
         </li>
-        <li id="icon-2">
+        <li class="icon-2">
           <h3>Инструмент</h3>
           <img src="img/icon-2.svg" width="75" height="61" alt="">
           <a href="blank.html">
             На все случаи
           </a>
         </li>
-        <li id="icon-3">
+        <li class="icon-3">
           <h3>Техника</h3>
           <img src="img/icon-3.svg" width="78" height="62" alt="">
           <a href="blank.html">
             Для стройки
           </a>
         </li>
-        <li id="icon-4">
+        <li class="icon-4">
           <h3>Скидки 50%</h3>
           <img src="img/icon-4.svg" width="59" height="72" alt="">
           <a href="blank.html">
             На 350 товаров
           </a>
         </li>
-        <li id="icon-5">
+        <li class="icon-5">
           <h3>Доставка</h3>
           <img src="img/icon-5.svg" width="78" height="63" alt="">
           <a href="blank.html">
@@ -285,9 +287,31 @@
         Вы можете забрать товар сами,
         заехав в наш офис:
         <img src="img/map.png" width="300" height="158" alt="Большая Конюшенная ул. 19">
+      <div>
+        <img src="img/map-big.png" width="943" height="449" alt="Большая Конюшенная ул. 19">
+        <button type="button">
+          <img src="img/icon-close.svg" alt="Закрыть окно" width="21" height="21">
+        </button>
+      </div>
       </p>
-      <a href="blank.html">Как проехать</a>
       <a href="blank.html">Заблудились? Пишите нам!</a>
+      <div>
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="name" required>
+
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
+          <label for="letter">Текст письма:</label>
+          <textarea name="letter" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+
+          <button type="submit">Отправить</button>
+        </form>
+        <button type="button">
+          <img src="img/icon-close.svg" alt="Закрыть окно" width="21" height="21">
+        </button>
+      </div>
     </section>
   </main>
   <footer>
