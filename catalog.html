@@ -15,7 +15,7 @@
       </a>
       <section>
         <img src="img/icon-search.svg" alt="Поиск">
-        <form action="https://echo.htmlacademy.ru/" method="POST">
+        <form action="https://echo.htmlacademy.ru/" method="GET">
           <input type="search" placeholder="Поиск:" name="search">
         </form>
       </section>
@@ -86,7 +86,47 @@
       </li>
     </ul>
     <section>
-      <!-- Здесь будет фильтр товаров -->
+      <form action="https://echo.htmlacademy.ru/" method="POST">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <label for="Bosch">Bosch</label>
+              <input type="checkbox" name="Bosch" id="Bosch" checked>
+            </li>
+            <li>
+              <label for="interskol">Интерскол</label>
+              <input type="checkbox" name="Interskol" id="interskol">
+            </li>
+            <li>
+              <label for="makita">Makita</label>
+              <input type="checkbox" name="Makita" id="makita" checked>
+            </li>
+            <li>
+              <label for="dewalt">DeWalt</label>
+              <input type="checkbox" name="DeWalt" id="dewalt">
+            </li>
+            <li>
+              <label for="hitachi">Hitachi</label>
+              <input type="checkbox" name="Hitachi" id="hitachi">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <label for="battery">Аккумуляторные</label>
+              <input type="radio" name="filter-source" id="battery" value="battery" checked>
+            </li>
+            <li>
+              <label for="ac">Сетевые</label>
+              <input type="radio" name="filter-source" id="ac" value="A.C.">
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
       <div>
